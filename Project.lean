@@ -2,5 +2,6 @@
 -- Import modules here that should be built as part of the library.-/
 
 import «Project».Basic
+import  «Project».SmallTasks
 import Mathlib
 
