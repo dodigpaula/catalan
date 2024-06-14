@@ -248,12 +248,6 @@ theorem rotation_bijective : bijective tree_rotation := by
 -------------------------------------------------------------------------
 -- Large task 6 : n + 1 divides choose 2n n
 
--- We couldn't find where binomials were located in mathlib4.
--- So this is the definition used in lean3.
-def my_choose : Nat -> Nat -> Nat
-  | _, 0 => 1
-  | 0, (_ + 1) => 0
-  | (n + 1), (k + 1) => my_choose n k + my_choose n (k + 1)
 
 -- Used to do proof
 def fac : Nat -> Nat
